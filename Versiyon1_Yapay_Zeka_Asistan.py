@@ -28,7 +28,7 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-API_KEY = ""
+API_KEY = st.secrets.get("GEMINI_API_KEY")
 VERITABANI = Path(__file__).resolve().with_name("sohbetler.db")
 KISILIK = {
     "Genel Asistan": "Sen cana yakın, Türkçe konuşan, öğrencilere yardım eden akıllı bir asistansın.",
